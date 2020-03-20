@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+	<link href="stylee.css" type="text/css" rel="stylesheet" media="all">
+<meta charset="utf-8">
+<title>NETACAD Anasayfa</title>
+
+<script src="//code.jivosite.com/widget/QM7qxEA0Dk" async></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!--https://weebtasarim.com/jquery-ile-yukari-cik-butonu-ekleme-->
+<script>
+$(document).ready(function () {
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+		   $('.scrollup').fadeIn();
+		   } else {
+			  $('.scrollup').fadeOut();
+		   } });
+$('.scrollup').click(function () {
+ $("html, body").animate({
+	 scrollTop: 0
+ }, 600);
+  return false;
+  });
+});
+</script>
+
+</head>
+<body>
+	<header>
+			<script src="//code.jivosite.com/widget/QM7qxEA0Dk" async></script>
+
+	  <h1> <a href="My_Tutorial_Blog.html"> <img src="Pictures/netacad logo 4_6.png" width="200px" alt="Remzi Cenk BOZTEPE"></a>Cisco Networking Academy <a href="My_Tutorial_Blog.html"> <img src="Pictures/netacad logo 4_6.png" width="200px" alt="Remzi Cenk BOZTEPE"></a></h1>
+		<h3>Uzmanından Ücretsiz Öğrenin</h3>
+	</header>
+
+	<!-- Sosyal Medya Iconları ve Bağlantıları -->
+	<p id="socialmedia" align="right"><a href="https://www.facebook.com/remzi.wirlebenautos"><img src="Icons/facebookicon.png" width="20px" height="20px"></a><a href="https://www.instagram.com/remzicnk20/"><img src="Icons/instagramicon.png" width="20px" height="20px"></a><a href="https://www.linkedin.com/in/remzi-cenk-boztepe-7a9542101/"><img src="Icons/linkedinicon.png" width="20px" height="20px"></a><a href="https://tr.pinterst.com/brancoishere/"><img src="Icons/pinteresticon.png" width="20px" height="20px"></a><a href="https://twitter.com/RemziCenk"><img src="Icons/twittericon.png" width="20px" height="20px"></a><a href="https://www.youtube.com/channel/UCAalxozFCl9MDxL_tYSeQgQ?view_as=subscriber"><img src="Icons/youtubeicon.png" width="20px" height="20px"></a></p>
+	
+	<div id="Anasayfa">
+		<div id="menu" class="mobil">
+			<ul>
+				<li><a href="Anasayfa.html">Anasayfa</a></li>
+				<li><a href="#">Ders Notları</a>
+					<ul id="dersNotlariUl">
+						<li><a href="#">Router</a>
+							<ul id="routerUl">
+								<li><a href="#">Router Nedir?</a></li>
+								<li><a href="#">Router Yapılandırmasına Giriş</a></li>
+								<li><a href="Router_Commands.html">Temel Router Komutları</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Switch</a>
+							<ul id="switchUl">
+								<li><a href="#">Switch Nedir?</a></li>
+								<li><a href="#">Switch Yapılandırmasına Giriş</a></li>
+								<li><a href="Switch_Commands.html">Temel Switch Komutları</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Eğitim Videoları</a>
+					<ul>
+						<li><a href="Router_Tutorial.html">Router Configuration</a></li>
+						<li><a href="Switch_Tutorial.html">Switch Configuration</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Hakkımda</a>
+					<ul>
+						<li><a href="Ozgecmis.html">Özgeçmiş</a></li>
+						<li><a href="Basarilar.html">Başarılar</a></li>
+					</ul>
+				</li>
+				<li><a href="Iletisim.html" target="_blank">İletişim</a></li>
+			</ul>
+		</div>
+	
+	<!--https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_animated -->
+	<div class="w3-container" align="center";></div>
+<div class="w3-content w3-section" style="max-width:500px; margin: auto; ">
+  <img class="mySlides w3-animate-top" src="Pictures/Cisco-foto1.jpg" style="width:500px" height="300px">
+  <img class="mySlides w3-animate-bottom" src="Pictures/Cisco-foto2.jpg" style="width:500px" height="300px">
+  <img class="mySlides w3-animate-top" src="Pictures/Cisco-foto3.jpg" style="width:500px" height="300px">
+  <img class="mySlides w3-animate-bottom" src="Pictures/Cisco-foto4.jpg" style="width:500px" height="300px">
+<img class="mySlides w3-animate-bottom" src="Pictures/cisco-lab.jpg" style="width:500px" height="300px">
+</div>
+
+</div>
+	
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+	
+	<!--http://www.yunusemrealtay.com/html-mobil-menu-olusturma/-->
+	<script type="text/javascript">
+function myFunction() {
+    var x = document.getElementById("menu");
+    if (x.className === "mobil") {
+        x.className += " responsive";
+    } else {
+        x.className = "menu";
+    }
+}
+</script>
+
+	<div id="Panolar" style="width:98%; height:auto;">
+		<ul>
+			<li>
+				<div class="Haber-Duyuru">Duyurular</div>
+				<div>Router Basit Configuration adlı video eklendi.</div>
+				<div>Router DHCP Havuzu oluşturma adlı video eklendi.</div>
+				<div>Router Telnet Bağlantısı adlı video eklendi.</div>
+			</li>
+			
+			<li>
+				<div class="Haber-Duyuru">Haberler</div>
+				<div>Router Basit Configuration adlı video eklendi.</div>
+				<div>Router DHCP Havuzu oluşturma adlı video eklendi.</div>
+				<div>Router Telnet Bağlantısı adlı video eklendi.</div>
+
+			</li>
+			<li>
+				<div class="Haber-Duyuru">Bağlantılar</div>
+					<div><a href="https://www.netacad.com/">NETACAD - Cisco Networking Academy</div>
+					<div><a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html">CCNA - Certification</a></div>
+					<div><a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/professional/ccnp-routing-switching.html">CCNP - Certification</a></div>
+			</li>
+		</ul>
+	</div>
+
+<footer>
+		<script src="//code.jivosite.com/widget/QM7qxEA0Dk" async></script>
+
+		<p align="center">© 2019 Remzi Cenk BOZTEPE | All right reserved.</br>
+	E-Mail:
+	<a href="mailto:cisconetworkingacademymaster@gmail.com">cisconetworkingacademymaster@gmail.com</a></br>
+	Telefon: +(90) 542 590 07 75<br/>
+	Adres: Kabaoğlu Mahallesi Üçtepeler Caddesi Kocaeli Üniversitesi Umuttepe Kampüsü</p>
+	</footer>
+</body>
+</html>

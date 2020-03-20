@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: sans-serif;
+	background-image: url(Pictures/backgroundimage2.jpg);
+}
+
+#Anasayfa{
+	background-color: white;
+}
+
+header h1 {
+	text-align: center;
+	color: #E7FBAA;
+}
+
+header h3 {
+	text-align: center;
+	color: wheat;
+}
+
+#menu {
+	text-align: center;
+	padding: 30 220px;
+	margin-left: 150px;
+	border: 10px;
+	background-color: #926F70;
+}
+
+#menu ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#menu li {
+	float: left;
+  	position: relative;
+	  width: 180px;
+}
+
+#menu ul li {
+	list-style-type: none;
+	float: left;
+	position: relative;
+}
+
+#menu ul li ul{
+	  display: none;
+}
+
+#menu ul li a{
+  	text-decoration: none;
+  	background: #4567D4;
+  	display: block;
+	color: white;
+ 	font-weight: bold;
+	font-family: sans-serif;
+  	text-align: center;
+  	border-bottom: 2px solid #5F64C0;
+  	border-left: 1px solid blue;
+	padding: 5px;
+	position: relative;
+}
+
+#menu ul li ul li a{
+  	background: #B36EED;
+  	text-align: left;
+  	padding: 5px;
+  	border-bottom: 1px solid #04AEEB;
+  	font-size: 14px;
+}
+ 
+#menu li a:hover{
+  	background: #050AE0;
+	  transition: .5s;
+}
+ 
+#menu ul li ul li a:hover{
+  	padding-left: 12px;
+}
+
+#menu ul li:hover ul {
+	display: block;
+	clear: both;
+	position: absolute;
+}
+
+#dersNotlariUl li ul#routerUl {
+	display:none;
+}
+
+#dersNotlariUl li ul#switchUl {
+	display:none;
+}
+
+#dersNotlariUl li:hover ul#routerUl {
+	display:block;
+	position:absolute;
+	left:180px;
+	top:0;
+}
+
+#dersNotlariUl li:hover ul#switchUl {
+	display:block;
+	position:absolute;
+	left:180px;
+	top:0;
+}
+
+#socialmedia {
+	margin: 0px;
+	padding: 0px;
+}
+
+#Panolar ul li {
+	text-decoration: none;
+	margin:5px;
+	padding:10px;
+	background-color:lightgoldenrodyellow;
+	float:left;
+	width:30%;
+	list-style-type:none;
+	text-align:left;
+}
+	
+#Panolar ul li div {
+	text-decoration: none;
+	margin-bottom:10px;
+	padding:5px;
+}
+	
+.Haber-Duyuru {
+	text-decoration: none;
+	border-bottom:1px dashed black;
+	padding:5px;
+	font-weight:bold;
+	position: relative
+}
+
+#top {
+	bottom: 5px;
+	bottom: 20px;
+	display: none;
+	height: 100px;
+	position: fixed;
+	right: 20px;
+}
+
+.scrollup {
+
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 50px;
+	right: 100px;
+	display: none;
+	text-indent: -9999px;
+	background: url('icon_top.png') no-repeat;
+	background-color: #000;
+	}
+
+footer {
+	clear: both;
+	background-color: #4567D4;
+	text-align: center;
+	padding-top: 0px;
+	position: relative;
+	height: 90px;
+	margin-top:0px;
+}
+
+/*media query for small screen devices */
+@media screen and (max-width:480px) {
+	/*Container for links in header */
+	header {
+		width: 100%;
+		text-align: center;
+		background-color: rgba(190,190,190,1.00);
+		padding-bottom: 21px;
+	}
+
+	body {
+		text-align: center;
+		padding-right: 15px;
+		padding-left: 0px;
+	}
+
+	#Anasayfa {
+		text-align: center;
+		padding-right: 15px;
+		padding-left: 0px;
+	}
+
+	/*Offer - Text Banner */
+	#mainWrapper #offer {
+		padding-left: 0px;
+		text-align: center;
+	}
+	/* Menubar in sidebar */
+	#menu {
+		position: relative;
+		left: -8%;
+		text-align: center;
+	}
+	/*Menu headings in sidebar */
+	#menubar .menu h2 {
+		width: 100%;
+		display: block;
+	}
+	/* Each product in catalog view */
+	.mainContent .productRow .productInfo {
+		width: 100%;
+		display: block;
+		padding-left: 0px;
+		padding-right: 0px;
+		position: relative;
+		left: -2%;
+	}
+	footer {
+		width: 100%;
+		margin-left: -16px;
+		text-align: justify;
+		padding-bottom: 16px;
+		overflow: auto;
+	}
+	/* Unordered list for menu elements */
+	#menu ul {
+		position: relative;
+		padding-left: 24%;
+	}
+	/* Container for links in footer */
+	#mainWrapper footer .footerlinks {
+		padding-left: 8%;
+	}
+	/* Main content which excludes the sidebar */
+	#mainwrapper #content .mainContent {
+		margin-top: -81px;
+		text-align: center;
+		width: 100%;
+		padding-left: 0px;
+	}
+	}
+	

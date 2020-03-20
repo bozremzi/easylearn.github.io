@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Basic Switch Commands</title>
+<link href="stylee.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<article style="height: 1000px">
+    <a href="#" class="scrollup">Scroll</a>
+</article>
+
+	<header>
+	  <h1> <a href="My_Tutorial_Blog.html"> <img src="Pictures/netacad logo 4_6.png" width="200px" alt="Remzi Cenk BOZTEPE"></a>Cisco Networking Academy <a href="My_Tutorial_Blog.html"> <img src="Pictures/netacad logo 4_6.png" width="200px" alt="Remzi Cenk BOZTEPE"></a></h1>
+		<h3>Uzmanından Ücretsiz Öğrenin</h3>
+	</header>
+	
+	<!-- Sosyal Medya Iconları ve Bağlantıları -->
+	<p id="socialmedia" align="right"><a href="https://www.facebook.com/remzi.wirlebenautos"><img src="Icons/facebookicon.png" width="20px" height="20px"></a><a href="https://www.instagram.com/remzicnk20/"><img src="Icons/instagramicon.png" width="20px" height="20px"></a><a href="https://www.linkedin.com/in/remzi-cenk-boztepe-7a9542101/"><img src="Icons/linkedinicon.png" width="20px" height="20px"></a><a href="https://tr.pinterst.com/brancoishere/"><img src="Icons/pinteresticon.png" width="20px" height="20px"></a><a href="https://twitter.com/RemziCenk"><img src="Icons/twittericon.png" width="20px" height="20px"></a><a href="https://www.youtube.com/channel/UCAalxozFCl9MDxL_tYSeQgQ?view_as=subscriber"><img src="Icons/youtubeicon.png" width="20px" height="20px"></a></p>
+	
+	<div id="Anasayfa">
+	<div id="menu">
+			<ul>
+				<li><a href="Anasayfa.html">Anasayfa</a></li>
+				<li><a href="#">Ders Notları</a>
+					<ul id="dersNotlariUl">
+						<li><a href="#">Router</a>
+							<ul id="routerUl">
+								<li><a href="#">Router Nedir?</a></li>
+								<li><a href="#">Router Yapılandırmasına Giriş</a></li>
+								<li><a href="Router_Commands.html">Temel Router Komutları</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Switch</a>
+							<ul id="switchUl">
+								<li><a href="#">Switch Nedir?</a></li>
+								<li><a href="#">Switch Yapılandırmasına Giriş</a></li>
+								<li><a href="Switch_Commands.html">Temel Switch Komutları</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Eğitim Videoları</a>
+					<ul>
+						<li><a href="Router_Tutorial.html">Router Configuration</a></li>
+						<li><a href="Switch_Tutorial.html">Switch Configuration</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Hakkımda</a>
+					<ul>
+						<li><a href="Ozgecmis.html">Özgeçmiş</a></li>
+						<li><a href="Basarilar.html">Başarılar</a></li>
+					</ul>
+				</li>
+				<li><a href="Iletisim.html" target="_blank">İletişim</a></li>
+			</ul>
+		</div>
+	
+	<table border="1" align="center" style="margin: auto; padding: 50px;">
+		<tr>
+			<td><b>Komutlar</b></td>
+			<td><b>Açıklama</b></td>
+		</tr>
+		
+		<tr>
+			<td>hostname "NAME" </td>
+			<td>Switch'in adını değiştirir.</td>
+		</tr>
+		
+		<tr>
+			<td>enable</td>
+			<td>Ayrıcalıklı exec kipine geçer.</td>
+		</tr>
+		
+		<tr>
+			<td>configure terminal</td>
+			<td>Yapılandırma moduna geçer.</td>
+		</tr>
+		
+		<tr>
+			<td>show COMMAND</td>
+			<td>Yapılandırma hakkında bilgiler verir.</td>
+		</tr>
+		
+		<tr>
+			<td>switchport access vlan "NUMBER"</td>
+			<td>Switch'in bir portunu VLAN'a atamak için kullanılır.</td>
+		</tr>
+		
+		<tr>
+			<td>vlan "NUMBER"</td>
+			<td>VLAN oluşturur.</td>
+		</tr>
+		
+		<tr>
+			<td>switchport mode trunk</td>
+			<td>İki Switch arasında belirlenen portu Trunk yapar. </td>
+		</tr>
+		
+		<tr>
+			<td>exit</td>
+			<td>O anki configuration modundan çıkmak için kullanılır.</td>
+		</tr>
+		
+		<tr>
+			<td>enable secret "PASSWORD"</td>
+			<td>Switch'e verilen şifreyi cryiptolar.</td>
+		</tr>
+		
+		<tr>
+			<td>line vty 0 4</td>
+			<td>Telnet ile giriş yapmak için yapılandırılması gereklidir.</td>
+		</tr>
+		
+		<tr>
+			<td>banner motd #MESSAGE#</td>
+			<td>MOTD: (Message of the day) Günün Mesajını ayarlar.</td>
+		</tr>
+		
+		<tr>
+			<td>interface vlan "NUMBER"</td>
+			<td>Girilen VLAN arayüzü için yapılandırma moduna geçer.</td>
+		</tr>
+		
+		<tr>
+			<td>speed auto</td>
+			<td>Port hızını otomatik ayarlar.</td>
+		</tr>
+		
+		<tr>
+			<td>copy running-config startup-config</td>
+			<td>Yapılan konfigurasyonları kaydeder.</td>
+		</tr>
+		
+		<tr>
+			<td>ip http authentication</td>
+			<td>Yerel kullanıcı veri tabanını kullanmak istediğinde HTTP kimlik doğrulamasını etkinleştirir.</td>
+		</tr>
+		
+	</table>
+		
+		</div>
+	<footer>
+		<p align="center">© 2019 Remzi Cenk BOZTEPE | All right reserved.</br>
+	E-Mail:
+	<a href="mailto:cisconetworkingacademymaster@gmail.com">cisconetworkingacademymaster@gmail.com</a></br>
+	Telefon: +(90) 542 590 07 75<br/>
+	Adres: Kabaoğlu Mahallesi Üçtepeler Caddesi Kocaeli Üniversitesi Umuttepe Kampüsü</p>
+	</footer>
+
+</body>
+</html>
