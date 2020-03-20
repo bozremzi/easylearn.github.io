@@ -1,0 +1,6 @@
+C:\Users\RCenk\source\repos\SeyruSefer\SeyruSefer\bin\Debug\SeyruSefer.exe.config
+C:\Users\RCenk\source\repos\SeyruSefer\SeyruSefer\bin\Debug\SeyruSefer.exe
+C:\Users\RCenk\source\repos\SeyruSefer\SeyruSefer\bin\Debug\SeyruSefer.pdb
+C:\Users\RCenk\source\repos\SeyruSefer\SeyruSefer\obj\Debug\SeyruSefer.csprojAssemblyReference.cache
+C:\Users\RCenk\source\repos\SeyruSefer\SeyruSefer\obj\Debug\SeyruSefer.exe
+C:\Users\RCenk\source\repos\SeyruSefer\SeyruSefer\obj\Debug\SeyruSefer.pdb
